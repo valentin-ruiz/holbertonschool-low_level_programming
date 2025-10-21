@@ -1,12 +1,2 @@
 #!/bin/bash
-
-# in order to check if the file's input is provided
-if [ "$#" -ne 1 ]; then
-	echo "Usage: $0 source.c
-	exit 1
-fi
-input_file="$1"
-output_file="c"
-gcc -E "$input_file" -o "$output_file"
-echo "Preprocessed output saved to '$output_file'"
-
+gcc -E "$CFILE" -o c
