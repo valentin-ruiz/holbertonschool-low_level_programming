@@ -1,10 +1,20 @@
 #include <stdio.h>
 
-unsigned int main(void)
-	main=0123456789
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-		printf("$d\n");
-		
-		return(0);
+
+
+	/*Get the character to be written*/
+	char ch = '1';
+
+	/*Write the Character to stdout*/
+	for (ch = '1'; ch <= '9'; ch++)
+		putchar(ch);
+
+	return (0);
 }
-0123456789
