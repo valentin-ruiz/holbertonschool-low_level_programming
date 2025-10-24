@@ -7,14 +7,13 @@
  */
 int main(void)
 {
-
-
-	/*Get the character to be written*/
-	char ch = '1';
-
-	/*Write the Character to stdout*/
-	for (ch = '1'; ch <= '9'; ch++)
-		putchar(ch);
-
+	int i = 0;
+	while (i < 10)
+	{
+		putchar('0' + i);
+		i++;
+	}
+	
+	putchar('\n');
 	return (0);
 }
