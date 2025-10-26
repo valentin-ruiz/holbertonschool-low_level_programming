@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main0.h"
+#include "main.h"
 
 /**
  * main - Entry point
@@ -7,8 +7,17 @@
  * Return: Always 0 (Success)
  */
 
-int c1f(int)
+int main(void)
 {
-	fwrite(1, "_putchar\n", 9);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
