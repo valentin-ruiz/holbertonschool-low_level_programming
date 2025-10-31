@@ -4,18 +4,34 @@
 /**
  *print_triangle - function to print the triangle
  *@size: For the size
+ *_putchar: it's for write a character
  *Return: nothing
  *
  */
 
 void print_triangle(int size)
 {
-	for (int i = 1; i <= height; i++)
+	int i, j;
+
+	if (size <= 0)
 	{
-		for (int j = 1; j <= i; j++)
+		_putchar('\n');
+		return;
+	}
+
+	for (i = 1; i <= size; i++)
+	{
+		for (j = 1; j <= size; j++)
 		{
-			putchar("*");
+			if (j <= size - i)
+			{
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar('#');
+			}
 		}
-		putchar(" ");
+		_putchar('\n');
 	}
 }
